@@ -1,0 +1,43 @@
+{
+    "name": "apatis/exceptions",
+    "description": "Exceptions Collection",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "keywords": [
+        "exception",
+        "throwable"
+    ],
+    "authors": [
+        {
+            "name": "nawa",
+            "email": "nawa@yahoo.com",
+            "role": "developer"
+        },
+        {
+            "name": "pentagonal",
+            "email": "org@pentagonal.org",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "2.*",
+        "phpunit/phpunit": "^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Apatis\\Exceptions\\": "src/Exceptions/"
+        },
+        "files": [
+            "src/BackCompatibilitiesLoader.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Apatis\\Exceptions\\Tests\\": "Tests/"
+        }
+    }
+}
